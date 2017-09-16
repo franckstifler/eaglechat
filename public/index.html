@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="ui attached stackable menu">
+        <div class="ui container">
+          <a class="item">
+            <i class="home icon"></i> Loic EagleVision
+          </a>
+          <div class="right item">
+          </div>
+        </div>
+      </div>
+
+      <div class="ui grid very relaxed">
+          <div class="six wide column">
+            <form class="ui form attached fluid segment">
+              <div class="field">
+                    <div class="ui icon input">
+                        <input type="text" placeholder="Enter your name" id="name">
+                        <i class="users icon"></i>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui icon input">
+                        <input type="text" placeholder="Enter message" id="message">
+                        <i class="talk icon"></i>
+                    </div>
+                </div>
+                <button class="ui inverted primary button">
+                    <i class="send icon"></i>
+                    Send
+                </button>
+            </form>
+          </div>
+          <div class="ten wide column">
+            <h4>List of Messages</h4>
+            <div class="ui cards" id="messages">
+                
+                <!-- <div class="orange card">
+                    <div class="content">
+                        <div class="meta">Friend</div>
+                        <div class="description">
+                        Elliot Fu is a film-maker from New York.
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script> -->
+    <script src="/main.js"></script>
+</body>
+</html>
